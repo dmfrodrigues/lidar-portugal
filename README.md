@@ -33,6 +33,8 @@ The QGIS plugin:
 
 Just beware, if you select a large area, it may fill up your disk, and may take a while to download (from experience, 2-4h to download the district of Bragança, 98.4 GB; your case may depend on your bandwidth, and if you want to be extra cheeky you can launch multiple instances of the QGIS plugin to download simultaneously, tho for me it wasn't worth it).
 
+The whole MDS-50cm dataset should be around 1.37-2TB, so be careful if you want to download a large area.
+
 After downloading the data, you can generate the `.vrt` file with all the tiles in Web Mercator projection (EPSG:3857) by running:
 
 ```bash
