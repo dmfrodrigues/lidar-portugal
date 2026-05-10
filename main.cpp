@@ -247,7 +247,12 @@ string getTile(uint16 zTMS, uint32 xTMS, uint32 yTMS) {
     return tilePath;
 }
 
-int main(void) {
+int main(int argc, char* argv[]) {
+    if (argc < 3) {
+        cerr << "Usage: " << argv[0] << " <host> <port>" << endl;
+        return -1;
+    }
+
     using namespace httplib;
 
     Server svr;
@@ -268,7 +273,7 @@ int main(void) {
         res.set_file_content(tilePath);
     });
 
-    svr.listen("0.0.0.0", 8080);
+    svr.listen(argv[1], atoi(argv[2]));
 
     return 0;
 }
