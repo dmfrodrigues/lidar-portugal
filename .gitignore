@@ -1,0 +1,7 @@
+data
+tiles
+server
+*.vrt
+*.tif
+*.tiff
+hillshaded/*.tiff.aux.xml
