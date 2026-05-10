@@ -2,8 +2,18 @@
 
 This repository contains a map tile server for LiDAR data in Portugal.
 
-![alt text](image.png)
-City center of Bragança, Portugal, rendered with the anomaly metric.
+<table>
+    <tr>
+        <td width="50%">
+            <img src="ortosat2023.png" alt="alt text">
+            City center of Bragança, Portugal, pictured using OrtoSat of mainland Portugal - 30 cm - 2023 (DGT).
+        </td>
+        <td width="50%">
+            <img src="lidar.png" alt="alt text">
+            The same area, pictured using an elevation anomaly metric.
+        </td>
+    </tr>
+</table>
 
 The data can be sourced from [Direção-Geral do Território (DGT)](https://www.dgterritorio.gov.pt/), which provides high-resolution LiDAR data for the entire country (see [datasets](https://cdd.dgterritorio.gov.pt/dgt-fe/catalogos/colecoes?filter=LiDAR+-+Modelos+Digitais+do+Relevo&language=en)). I used the `MDS-50cm` dataset, corresponding to a digital surface model (includes buildings) with a resolution of 50 cm.
 
